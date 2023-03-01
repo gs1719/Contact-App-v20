@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:orientation="vertical"
+    android:background="@drawable/login_bk"
+    tools:context=".SignUP">
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:text="@string/register"
+        android:layout_marginTop="95dp"
+        app:emojiCompatEnabled="true"
+        android:textSize="@dimen/headerTextSize"
+        android:textColor="@color/primaryTextColor"
+        android:textStyle="bold"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.textview.MaterialTextView>
+   <com.google.android.material.textfield.TextInputLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+
+       >
+       <com.google.android.material.textfield.TextInputEditText
+           android:id="@+id/tietName"
+           android:hint="@string/login_name_hint"
+
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+       </com.google.android.material.textfield.TextInputEditText>
+   </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietUserName"
+            android:hint="@string/login_username_hint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietEmail"
+            android:hint="@string/login_email_hint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:passwordToggleEnabled="true"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:hint="@string/login_password_hint">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSignUP"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="end"
+        android:text="@string/signup_button"
+        app:cornerRadius="25dp">
+
+    </com.google.android.material.button.MaterialButton>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvsignIN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/primaryTextColor"
+        android:text="@string/signup_login_hint">
+
+    </com.google.android.material.textview.MaterialTextView>
+</LinearLayout>

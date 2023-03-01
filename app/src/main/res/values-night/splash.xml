@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="Theme.AppStarting" parent="Theme.SplashScreen">
+<!--    for background color-->
+    <item name="windowSplashScreenBackground">@color/black</item>
+<!--    for setting icon-->
+    <item name="windowSplashScreenAnimatedIcon">@drawable/group_2</item>
+<!--    post splash screen theme or main Theme-->
+    <item name="postSplashScreenTheme">@style/Theme.ContactApp</item>
+</style>
+</resources>
+
+<!--Set this theme to manifest file most important-->
+<!-- add installsplashscreen() to every class not only on main class-->

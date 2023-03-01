@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1022568189464",
+    "project_id": "contact-app-8f23e",
+    "storage_bucket": "contact-app-8f23e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1022568189464:android:c9dba46d63a6e5e1ad3d6d",
+        "android_client_info": {
+          "package_name": "com.example.contactapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1022568189464-f5hiafvecmrctrr1bjm7td4qbfm1pe3b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoV_wsVJt1fIVypiY02oFjottwpb-TrM0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1022568189464-f5hiafvecmrctrr1bjm7td4qbfm1pe3b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

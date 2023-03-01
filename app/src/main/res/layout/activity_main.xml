@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/login_bk"
+    android:paddingBottom="8dp"
+    android:paddingHorizontal="30dp"
+    android:paddingTop="180dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/loginHeader"
+        android:text="Login"
+        android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:helperText="*Required"
+        app:helperTextTextColor="@color/primaryTextColor"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextUserName"
+            android:hint="@string/login_username_hint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:passwordToggleEnabled="true"
+        app:helperText="*Required"
+        app:helperTextTextColor="@color/primaryTextColor"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:hint="@string/login_password_hint">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/cirLoginButton"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        app:cornerRadius="25dp"
+        app:backgroundTint="@color/blue"
+        android:text="Login"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+    <TextView
+        android:id="@+id/tvsignUP"
+        style="@style/parent"
+        android:textAlignment="textEnd"
+        android:textStyle="bold"
+        android:textColor="@color/primaryTextColor"
+        android:text="@string/login_signup_hint"
+        android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+
+</LinearLayout>
